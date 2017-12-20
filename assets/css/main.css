@@ -1,0 +1,101 @@
+.block {
+  display: block; }
+
+.inline-block {
+  display: inline-block; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  min-height: 100vh;
+  font-size: 14px; }
+
+#header {
+  background-color: #a1c4d1;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  z-index: 100; }
+  #header #logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+    #header #logo img {
+      width: 50px; }
+  #header #menuIcon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%); }
+    #header #menuIcon i {
+      cursor: pointer; }
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid #a1c4d1;
+  background-color: #e5eff3;
+  z-index: 100; }
+  #footer .footerWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center; }
+    #footer .footerWrapper a, #footer .footerWrapper .separator {
+      display: inline-block;
+      vertical-align: middle; }
+    #footer .footerWrapper .separator {
+      width: 1px;
+      height: 10px;
+      background-color: #a1c4d1; }
+    #footer .footerWrapper a {
+      color: #5d99af;
+      font-weight: 700;
+      margin: 0 15px;
+      text-decoration: none; }
+      #footer .footerWrapper a:first-of-type {
+        margin-left: 0; }
+      #footer .footerWrapper a:last-of-type {
+        margin-right: 0; }
+
+#mainContent {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  #mainContent .mainContentWrapper {
+    padding: 25px;
+    position: relative; }
+  #mainContent h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #a1c4d1;
+    font-weight: 700;
+    border-bottom: 1px solid #cdcdcd; }
+  #mainContent .assistanceAgentsList {
+    margin-top: 25px; }
+    #mainContent .assistanceAgentsList .assistanceAgent {
+      margin-bottom: 25px;
+      border-radius: 5px;
+      background-color: #fafafa;
+      padding: 15px;
+      box-shadow: 0 0 5px #999; }
+      #mainContent .assistanceAgentsList .assistanceAgent .assistanceAgentProfile {
+        display: inline-block;
+        vertical-align: middle;
+        width: 150px; }
+        #mainContent .assistanceAgentsList .assistanceAgent .assistanceAgentProfile img {
+          width: 75px;
+          border-radius: 50%; }
+      #mainContent .assistanceAgentsList .assistanceAgent .assistanceAgentDataContainer {
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(100% - 150px); }
+
+/*# sourceMappingURL=main.css.map */
